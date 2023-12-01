@@ -1,0 +1,83 @@
+:root {
+    --color-ingenium : #9b004c;
+    --color-white : white;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 10PX = 1rem**/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-headings);
+    margin: 0 0 0 0;
+    line-height: 1.2;
+}
+h1{
+    font-size: 6rem ;
+}
+h2{
+    font-size: 4.8rem ;
+}
+h3{
+    font-size: 3.6rem ;
+}
+h4{
+    font-size: 2.4rem ;
+}
+/** Globales **/
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/** Inicio  SideBar **/
+.sidebar{
+    max-width: 25rem;
+    height: 100vh;
+    background: var(--color-ingenium);
+}
+.sidebar_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.sidebar_info_user{
+    color: white;
+}
+.sidebar_info_user_colum{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:4rem
+}
+
+.sidebar_info_user img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    border-radius: 1rem;
+    
+}
+
+/** Fin  SideBar **/
